@@ -1,3 +1,84 @@
+/* ===== Signin & Signup Card ===== */
+.auth-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+}
+.auth-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 24px rgba(58,46,92,0.10);
+    padding: 38px 32px 28px 32px;
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth-card h2 {
+    margin-top: 0;
+    color: #3a2e5c;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+}
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.auth-form input {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8f8f8;
+    transition: border 0.2s;
+}
+.auth-form input:focus {
+    border: 1.5px solid #e0b973;
+    outline: none;
+}
+.auth-form button {
+    background: #e0b973;
+    color: #3a2e5c;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.08rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.auth-form button:hover {
+    background: #3a2e5c;
+    color: #fff;
+}
+.auth-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+.auth-card a {
+    color: #3a2e5c;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.auth-card a:hover {
+    color: #e0b973;
+}
+@media (max-width: 600px) {
+    .auth-card {
+        padding: 22px 6vw 18px 6vw;
+        max-width: 98vw;
+    }
+}
 .navbar.column {
     flex-direction: column !important;
     align-items: flex-start !important;
