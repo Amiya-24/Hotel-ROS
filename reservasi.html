@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi - Hotel Royal Orchid Suite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="page-flex">
+    <header>
+        <div class="container">
+            <h1>Hotel Royal Orchid Suite</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="reservasi">
+            <div class="container">
+                <h2>Reservasi Kamar</h2>
+                <form class="reservasi-form">
+                    <div class="form-group">
+                        <label for="checkin">Tanggal Check-In *</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Tanggal Check-Out *</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Jumlah Tamu *</label>
+                        <input type="number" id="guests" name="guests" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Tipe Kamar *</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">-- Pilih Tipe Kamar --</option>
+                            <option value="standard">Standard</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Buat Reservasi</button>
+                </form>
+                <div class="motivation">
+                    <p>Nikmati liburan impian Anda bersama kami!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hotel Royal Orchid Suite. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
