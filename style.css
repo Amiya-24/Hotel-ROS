@@ -1,3 +1,115 @@
+.navbar.column {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+}
+.navbar.column .nav-menu {
+    margin-top: 8px !important;
+}
+
+.reservasi-container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(58,46,92,0.10);
+    padding: 40px 32px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+.reservasi-illustration {
+    flex: 1 1 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    max-width: 340px;
+}
+.reservasi-illustration img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(58,46,92,0.13);
+    object-fit: cover;
+}
+.reservasi-content {
+    flex: 2 1 340px;
+    min-width: 260px;
+    max-width: 480px;
+    text-align: left;
+}
+.reservasi-content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #3a2e5c;
+}
+.reservasi-desc {
+    color: #555;
+    margin-bottom: 24px;
+    font-size: 1.08rem;
+}
+.reservasi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: #f8f8f8;
+    padding: 24px 18px;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px rgba(58,46,92,0.06);
+}
+.reservasi-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.reservasi-form label {
+    font-weight: 500;
+    color: #3a2e5c;
+    margin-bottom: 2px;
+}
+.reservasi-form input,
+.reservasi-form select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+.reservasi-form input:focus,
+.reservasi-form select:focus {
+    border: 1.5px solid #e0b973;
+    outline: none;
+}
+.reservasi-form button.btn {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+}
+.motivation {
+    margin-top: 18px;
+    text-align: center;
+    color: #3a2e5c;
+    font-size: 1.08rem;
+    font-style: italic;
+}
+@media (max-width: 900px) {
+    .reservasi-container {
+        flex-direction: column;
+        gap: 28px;
+        padding: 24px 8px;
+    }
+    .reservasi-illustration img {
+        max-width: 220px;
+    }
+    .reservasi-content {
+        max-width: 100%;
+    }
+}
 .navbar {
     display: flex;
     align-items: center;
